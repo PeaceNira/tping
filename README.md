@@ -20,7 +20,7 @@ pip install termcolor
 ## Usage
 ### Command Syntax
 ```bash
-python tcp_ping.py <host> <port> [-c COUNT] [-i INTERVAL] [-t TIMEOUT]
+python tping.py <host> <port> [-c COUNT] [-i INTERVAL] [-t TIMEOUT]
 ```
 
 ### Arguments:
@@ -33,12 +33,12 @@ python tcp_ping.py <host> <port> [-c COUNT] [-i INTERVAL] [-t TIMEOUT]
 ### Examples:
 1. Ping `example.com` on port `80` four times (default settings):
    ```bash
-   python tcp_ping.py example.com 80
+   python tping.py example.com 80
    ```
 
 2. Ping `192.168.1.1` on port `22` with a 1-second timeout:
    ```bash
-   python tcp_ping.py 192.168.1.1 22 -t 1
+   python tping.py 192.168.1.1 22 -t 1
    ```
 
 ## Making the Script Executable
@@ -46,16 +46,16 @@ To simplify usage, you can make the script executable and move it to a directory
 
 1. **Make Executable**:
    ```bash
-   chmod +x tcp_ping.py
+   chmod +x tping.py
    ```
 
 2. **Move to `PATH`**:
    ```bash
-   mv tcp_ping.py ~/.local/bin/paping
+   mv tping.py ~/.local/bin/tping
    ```
 
 3. **Run the Script**:
    ```bash
-   paping example.com 80
+   tping example.com 80
    ```
 
